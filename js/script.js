@@ -51,4 +51,30 @@ if(selectOption === '1'){
         
     }   
 
+}else if(selectOption === '3'){
+
+    const enterPin = prompt('Please enter your PIN')
+
+    if (enterPin.length !== 4){
+        alert('Invalid pin. Please enter a valid pin')
+    }else{
+
+        const acctNum= Number(prompt('Please enter your account number'))
+        console.log(acctNum.length)
+
+        if(acctNum.length !== 10 || acctNum.length > 10){
+            alert('Invalid account number. Please enter a valid account number')
+        }else{
+
+            const entAmt= Number(prompt('Please enter an amount'))
+            if(!entAmt || entAmt <=0){
+                alert('Invalid amount.Please enter a valid amount')
+            }else{
+                alert('Successful')
+            }
+        }
+
+      
+        }
+
 }
