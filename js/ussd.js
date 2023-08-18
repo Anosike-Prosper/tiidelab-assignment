@@ -1,4 +1,6 @@
 
+
+
 const yourName= prompt(`What is your name?`) || 'Siri'
 alert(`Hello ${yourName}. Welcome to UBA`)
 const selectOption = prompt(`Please Select an option
@@ -17,7 +19,7 @@ if(selectOption === '1'){
     }else{
 
         const enterAmt= prompt('Enter Amount')
-        if (enterAmt <= 0){
+        if (Number(enterAmt) <= 0 || !enterAmt){
             alert('Invalid Amount. Amount must be greater than zero')
         }else{
             alert(`Successful sent ${enterAmt}`)
@@ -39,7 +41,7 @@ if(selectOption === '1'){
             alert('Invalid phone number. Phone number must be eleven numbers')
         }else{
             const enterAmt= prompt('Enter Amount')
-           if (enterAmt <= 0){
+           if (Number(enterAmt) <= 0 || !enterAmt){
             alert('Invalid amount. Amount must be greater than zero')
            }else{
             alert(`Successful sent ${enterAmt} to ${enterNumber}`)
@@ -64,7 +66,7 @@ if(selectOption === '1'){
         }else{
 
             const entAmt= prompt('Please enter an amount')
-            if(!entAmt || entAmt <=0){
+            if(!entAmt || Number(entAmt) <=0){
                 alert('Invalid amount. Amount must be greater than zero')
             }else{
                 alert(`Successful transferred ${entAmt} to ${acctNum}`)
@@ -102,7 +104,7 @@ if(selectOption === '1'){
         }else{
 
             const entAmt= prompt('Please enter an amount')
-            if(!entAmt || entAmt <=0){
+            if(!entAmt || Number(entAmt) <=0){
                 alert('Invalid amount. Amount must be greater than zero')
             }else{
                 alert(`Successful transferred ${entAmt} to ${acctNum}`)
